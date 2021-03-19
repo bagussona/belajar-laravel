@@ -1,0 +1,7 @@
+install laravel menggunakan composer:
+>composer create-project --prefer-dist laravel/laravel "nama_folder"
+
+>php artisan serve -> start server laravel
+
+>php artisan down -> server down for access
+>php artisan up -> server avail for access
