@@ -1,6 +1,14 @@
 install laravel menggunakan composer:
 >composer create-project --prefer-dist laravel/laravel "nama_folder"
 
+
+Tips make/ membuat controller, model dan migration + resources (dibuatkan namespace dll awkwkwkwk)
+>php artisan make:controller "nama controller" -r -m "nama model"
+
+Tips make/ membuat controller seperti diatas, tapi di sub folder.. (maksudnya, stlh folder controller ada folder lagi)
+>php artisan make:controller "subfoldernya/ nama controllernya" -r -m "nama model"
+>>>>>>note: kenapa model diluar? Karena Model best practice nya di folder app. Tapi, bisa juga di simpen di subfolder.
+
 >php artisan serve -> start server laravel
 
 >php artisan down -> server down for access

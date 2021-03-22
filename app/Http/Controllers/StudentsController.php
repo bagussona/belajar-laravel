@@ -103,8 +103,20 @@ class StudentsController extends Controller
             'nrp' => 'required',
             'email' => 'required',
             'jurusan' => 'required'
-        ]);
-
+            ]);
+            
+            Student::where('id', $id)->update([
+                'nama' => $request->nama,
+                'nrp' => $request->nrp,
+                'email' => $request->email,
+                'jurusan' => $request->jurusan
+            ]);
+    
+            // return $request;
+    
+            return redirect('/student')->with('status', 'Data Berhasil di update!');
+            
+            
         // $id = Student::find($id);
         // $id->nama = $request->nama;
         // $id->nrp = $request->nrp;
@@ -114,18 +126,6 @@ class StudentsController extends Controller
         // $santri->update();
 
         // return redirect('/student');
-
-
-            Student::where('id', $id)->update([
-                'nama' => $request->nama,
-                'nrp' => $request->nrp,
-                'email' => $request->email,
-                'jurusan' => $request->jurusan
-            ]);
-
-            // return $request;
-
-            return redirect('/student')->with('status', 'Data Berhasil di update!');
 
 
 

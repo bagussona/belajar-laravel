@@ -23,7 +23,7 @@
                 <a class="nav-link" href="/mahasiswa">Mahasiswa</a>
                 <a class="nav-link" href="/student">Students</a>
                 <a class="nav-link" href="/about"> About</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Admin</a>
             </div>
             </div>
             </nav>
